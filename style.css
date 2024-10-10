@@ -99,7 +99,7 @@ header button:hover{
     color: rgb(78, 78, 78);
 }
 
-#hero button{
+#hero button, #audit_text button{
     width: 220px;
     height: 45px;
     border-radius: 50px;
@@ -202,7 +202,7 @@ button{
 }
 
 #power{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 #power h1{
@@ -273,6 +273,57 @@ button{
     opacity: 0.8;
 }
 
+#emission_tab{
+    height: max-content;
+    background-color: rgb(247, 249, 250);
+    padding: 50px 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#emission_tab h1{
+    color: rgb(0, 64, 32);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 42px;
+    margin: 0px 0px 40px 0px;
+}
+
+#emission_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+#audit_img img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px gray;
+}
+
+#audit_text{
+    font-weight: 700;
+    font-size: 28px;
+    color: #001737;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+#audit_text p{
+    color: #868E96;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+
+
+/* media queries */
 
 @media (max-width: 1024px){
 
@@ -337,5 +388,15 @@ button{
     #carbon-img img{
         width: 80%;
     }
+
+    #emission_wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #audit_img img{
+        width: 90vw;
+    }
+
     
 }
